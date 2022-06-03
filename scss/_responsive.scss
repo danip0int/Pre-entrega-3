@@ -1,0 +1,107 @@
+/*MEDIA QUERIE PANTALLA XL*/
+
+@media all and (max-width: 1250px) {
+  .mySlide {
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 50px;
+      width: 50px;
+      border-radius: 40%;
+    }
+    .carousel-item h1 {
+      font-size: 55px;
+    }
+    .carousel-item p {
+      font-size: 19px;
+    }
+    .carousel-control-next {
+      right: 40px !important;
+    }
+    .carousel-control-prev {
+      left: 40px !important;
+    }
+  }
+  .bloqueExcursion {
+    .imgExcursion1 {
+      justify-content: center !important;
+      left: 0px !important;
+    }
+    .imgExcursion2 {
+      justify-content: center !important;
+      right: 0px !important;
+    }
+  }
+}
+
+/*MEDIA QUERIE PANTALLA LG*/
+
+@media all and (max-width: 992px) {
+  .mySlide {
+    margin-top: 85px !important;
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 30px !important;
+      width: 30px !important;
+      border-radius: 20%;
+    }
+    .carousel-item h1 {
+      font-size: 47px;
+    }
+    .carousel-item p {
+      font-size: 25px;
+    }
+    .carousel-control-next {
+      right: 30px !important;
+    }
+    .carousel-control-prev {
+      left: 30px !important;
+    }
+  }
+  #navbarSupportedContent {
+    position: relative !important;
+    text-align: center !important;
+  }
+  .bloqueExcursion {
+    .imgExcursion1 {
+      justify-content: center !important;
+      left: 0px;
+    }
+    .imgExcursion2 {
+      justify-content: center !important;
+      right: 0px;
+    }
+  }
+  #header {
+    height: auto !important;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA MD*/
+
+@media all and (max-width: 768px) {
+  .mySlide {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 30px;
+      width: 30px;
+      border-radius: 30%;
+    }
+    .container h1 {
+      font-size: 30px;
+    }
+    .container p {
+      font-size: 15px !important;
+    }
+    .carousel-control-next {
+      right: 5px !important;
+    }
+    .carousel-control-prev {
+      left: 5px !important;
+    }
+  }
+  h2 {
+    font-size: 3rem !important;
+  }
+}

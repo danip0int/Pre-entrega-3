@@ -1,0 +1,30 @@
+/*MAPS*/
+
+$fuentes: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+);
+@each $clave, $valor in $fuentes {
+  .font-#{$clave} {
+    font-weight: $valor;
+  }
+}
+
+$cabeceras:(
+  h1: 6rem,
+  h2: 4rem,
+  h3: 2rem,
+  h4: 2rem,
+  p: 14px,
+  pPlus: 18px
+);
+
+@each $heading, $size in $cabeceras{
+  .font-#{$heading} {
+    font-size: $size;
+  }
+}

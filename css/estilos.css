@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+ul {
+  color: white;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0998ff;
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*HEADER*/
+#header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  border-top: 8px solid white;
+  width: 100%;
+  height: 120px;
+}
+
+/*MIXIN*/
+/*EXTENDED*/
+.btn, .btn-excursion {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: #3887f0c7;
+}
+
+/*MAPS*/
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.font-h1 {
+  font-size: 6rem;
+}
+
+.font-h2 {
+  font-size: 4rem;
+}
+
+.font-h3 {
+  font-size: 2rem;
+}
+
+.font-h4 {
+  font-size: 2rem;
+}
+
+.font-p {
+  font-size: 14px;
+}
+
+.font-pPlus {
+  font-size: 18px;
+}
+
+/*MEDIA QUERIE PANTALLA XL*/
+@media all and (max-width: 1250px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 50px;
+    width: 50px;
+    border-radius: 40%;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 55px;
+  }
+  .mySlide .carousel-item p {
+    font-size: 19px;
+  }
+  .mySlide .carousel-control-next {
+    right: 40px !important;
+  }
+  .mySlide .carousel-control-prev {
+    left: 40px !important;
+  }
+  .bloqueExcursion .imgExcursion1 {
+    justify-content: center !important;
+    left: 0px !important;
+  }
+  .bloqueExcursion .imgExcursion2 {
+    justify-content: center !important;
+    right: 0px !important;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA LG*/
+@media all and (max-width: 992px) {
+  .mySlide {
+    margin-top: 85px !important;
+  }
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 20%;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 47px;
+  }
+  .mySlide .carousel-item p {
+    font-size: 25px;
+  }
+  .mySlide .carousel-control-next {
+    right: 30px !important;
+  }
+  .mySlide .carousel-control-prev {
+    left: 30px !important;
+  }
+  #navbarSupportedContent {
+    position: relative !important;
+    text-align: center !important;
+  }
+  .bloqueExcursion .imgExcursion1 {
+    justify-content: center !important;
+    left: 0px;
+  }
+  .bloqueExcursion .imgExcursion2 {
+    justify-content: center !important;
+    right: 0px;
+  }
+  #header {
+    height: auto !important;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA MD*/
+@media all and (max-width: 768px) {
+  .mySlide {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 30px;
+    width: 30px;
+    border-radius: 30%;
+  }
+  .mySlide .container h1 {
+    font-size: 30px;
+  }
+  .mySlide .container p {
+    font-size: 15px !important;
+  }
+  .mySlide .carousel-control-next {
+    right: 5px !important;
+  }
+  .mySlide .carousel-control-prev {
+    left: 5px !important;
+  }
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+}
+
+.navbar ul a {
+  margin-right: 9px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.navbar ul a:hover {
+  transform: scale(1.2);
+}
+
+.navbar #navbarSupportedContent {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+}
+
+.navbar-brand {
+  font-size: 3.5rem;
+}
+
+/*Contenido HOME*/
+.animacion-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 25px #666;
+  cursor: pointer;
+}
+
+.mySlide {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.mySlide .carousel-item {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.mySlide .carousel-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.mySlide .carousel-item .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mySlide .carousel-item h1 {
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.mySlide .carousel-item p {
+  font-size: 30px;
+  margin: 0;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.mySlide .carousel-item.active h1 {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.mySlide .carousel-item.active p {
+  animation: fadeInRight 1s ease forwards;
+}
+
+.mySlide .carousel-control-next,
+.mySlide .carousel-control-prev {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.mySlide .carousel-control-next {
+  right: 100px;
+}
+
+.mySlide .carousel-control-prev {
+  left: 100px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn-excursion {
+  background-color: #50cbe0;
+}
+
+/*Finaliza pagina HOME*/
+/*Comienza pagina EXCURSIONES*/
+#videoExcursion {
+  margin-top: 120px;
+  background: #dfaeee;
+  background: radial-gradient(circle, rgba(223, 174, 238, 0.924807) 0%, #94e9ce 100%);
+  width: 100%;
+  height: 700px;
+  color: white;
+}
+
+.bloqueExcursion .imgExcursion1 {
+  justify-content: start;
+  left: 150px;
+}
+
+.bloqueExcursion .imgExcursion2 {
+  justify-content: end;
+  right: 150px;
+}
+
+.bloqueExcursion .descripcionExc {
+  width: 20%;
+}
+
+.bloqueExcursion .tituloExcursion {
+  font-size: 70px;
+}
+
+/*Finaliza pagina EXCURSIONES*/
+/*Comienza pagina CONTACTO*/
+.bloqueDeContacto {
+  margin-top: 140px;
+}
+
+/*Finaliza pagina CONTACTO*/
+/*FOOTER*/
+#footer {
+  padding: 1em 0;
+  width: 100%;
+  height: 150px;
+  margin-top: auto;
+}
+/*# sourceMappingURL=estilos.css.map */
