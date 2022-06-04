@@ -25,6 +25,9 @@
 .navbar-brand {
   font-size: 3.5rem;
 }
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
 
 /*Contenido HOME*/
 
@@ -37,6 +40,7 @@
   margin-top: 120px;
   margin-bottom: 50px;
   .carousel-item {
+    background: #777;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -56,6 +60,13 @@
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+    }
+    .overlay-image{
+      position: absolute;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.5;
+      z-index: 3;
     }
     h1 {
       color: #ffffff;
@@ -117,7 +128,9 @@
   @extend .btn;
   background-color: rgb(80, 203, 224);
 }
-
+.tituloSeparador{
+  height: 200px;
+}
 /*Finaliza pagina HOME*/
 
 /*Comienza pagina EXCURSIONES*/

@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100%;
   width: 100%;
   display: flex;
@@ -60,7 +60,23 @@ img {
   background-color: #3887f0c7;
 }
 
-/*MAPS*/
+/*BACKGROUND COLORS*/
+.bg-color1 {
+  background-color: #e9d5da;
+}
+
+.bg-color2 {
+  background-color: #827397;
+}
+
+.bg-color3 {
+  background-color: #4d4c7d;
+}
+
+.bg-color4 {
+  background-color: #363062;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -240,6 +256,10 @@ img {
   font-size: 3.5rem;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
 /*Contenido HOME*/
 .animacion-hover:hover {
   transform: translateY(-10px);
@@ -253,6 +273,7 @@ img {
 }
 
 .mySlide .carousel-item {
+  background: #777;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -275,6 +296,14 @@ img {
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.mySlide .carousel-item .overlay-image {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 3;
 }
 
 .mySlide .carousel-item h1 {
@@ -342,6 +371,10 @@ img {
 
 .btn-excursion {
   background-color: #50cbe0;
+}
+
+.tituloSeparador {
+  height: 200px;
 }
 
 /*Finaliza pagina HOME*/

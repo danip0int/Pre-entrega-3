@@ -1,67 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    height: 100%;
-    width: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-html{
-    font-size: 70%;
-    box-sizing: border-box;
+html {
+  font-size: 70%;
+  box-sizing: border-box;
 }
-ul{
-    color: white;
-    list-style-type: none;
+ul {
+  color: white;
+  list-style-type: none;
 }
-a{
-    text-decoration: none;
-    color: rgb(9, 152, 255);
-    font-size: 2rem;
+a {
+  text-decoration: none;
+  color: rgb(9, 152, 255);
+  font-size: 2rem;
 }
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 /*HEADER*/
 #header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    border-top: 8px solid rgb(255, 255, 255);
-    width: 100%;
-    height: 120px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  border-top: 8px solid rgb(255, 255, 255);
+  width: 100%;
+  height: 120px;
 }
 
 /*MIXIN*/
-@mixin caja-flex($principal, $horizontal, $wrap){
-    display: flex;
-    justify-content: $principal;
-    align-items: $horizontal;
-    flex-wrap: $wrap;
+@mixin caja-flex($principal, $horizontal, $wrap) {
+  display: flex;
+  justify-content: $principal;
+  align-items: $horizontal;
+  flex-wrap: $wrap;
 }
 
 /*EXTENDED*/
-.btn{
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-right: 80px;
-    margin-left: 80px;
-    margin-top: 15px;
-    margin-bottom: 8px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: white;
-    background-color:#3887f0c7;
+.btn {
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: #3887f0c7;
 }
-.btn{
-    @extend .btn;
-  }
+.btn {
+  @extend .btn;
+}
+/*BACKGROUND COLORS*/
+
+.bg-color1 {
+  background-color: rgb(233, 213, 218);
+}
+.bg-color2 {
+  background-color: rgb(130, 115, 151);
+}
+.bg-color3 {
+  background-color: #4d4c7d;
+}
+.bg-color4 {
+  background-color: #363062;
+}
+
+// $palette-color: (
+//   color1: rgb(168, 92, 249),
+//   color2: rgb(130, 115, 151),
+//   color3: rgb(77, 76, 125),
+//   color4: rgb(54, 48, 98)
+// );
+
+// @each $palette, $color in $palette-color {
+//   .paleta-#{$palette} {
+//     color: $color;
+//   }
+// }
