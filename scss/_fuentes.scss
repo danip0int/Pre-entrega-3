@@ -1,5 +1,5 @@
 
-$fuentes: (
+$fonts: (
   light: 300,
   regular: 400,
   medium: 500,
@@ -7,13 +7,13 @@ $fuentes: (
   bold: 700,
   extra-bold: 800,
 );
-@each $clave, $valor in $fuentes {
+@each $clave, $valor in $fonts {
   .font-#{$clave} {
     font-weight: $valor;
   }
 }
 
-$cabeceras:(
+$headings:(
   h1: 6rem,
   h2: 4rem,
   h3: 2rem,
@@ -22,7 +22,7 @@ $cabeceras:(
   pPlus: 18px
 );
 
-@each $heading, $size in $cabeceras{
+@each $heading, $size in $headings{
   .font-#{$heading} {
     font-size: $size;
   }

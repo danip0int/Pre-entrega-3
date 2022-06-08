@@ -6,9 +6,9 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 html {
@@ -35,7 +35,7 @@ img {
   position: fixed;
   z-index: 10;
   top: 0;
-  border-top: 8px solid rgb(255, 255, 255);
+  border-top: 8px solid #cb0d3d;
   width: 100%;
   height: 120px;
 }
@@ -49,7 +49,7 @@ img {
 }
 
 /*EXTENDED*/
-.btn {
+.btn-1 {
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -59,36 +59,30 @@ img {
   margin-bottom: 8px;
   font-size: 1.5rem;
   font-weight: 500;
-  color: white;
-  background-color: #3887f0c7;
+  color: rgb(255, 255, 255);
+  background-color: #cb0d3d;
 }
 .btn {
-  @extend .btn;
+  @extend .btn-1;
 }
 /*BACKGROUND COLORS*/
 
 .bg-color1 {
-  background-color: rgb(233, 213, 218);
+  background-color: #0e0036;
 }
 .bg-color2 {
-  background-color: rgb(130, 115, 151);
+  background-color: #39A2DB;
 }
 .bg-color3 {
-  background-color: #4d4c7d;
+  background-color: #6b6a6a05;
 }
 .bg-color4 {
-  background-color: #363062;
+  background-color: #000000;
+}
+.bg-color5 {
+  background-color: rgba(192, 189, 189, 0.055);
+}
+.bg-cards{
+  background-color: #ffffff;
 }
 
-// $palette-color: (
-//   color1: rgb(168, 92, 249),
-//   color2: rgb(130, 115, 151),
-//   color3: rgb(77, 76, 125),
-//   color4: rgb(54, 48, 98)
-// );
-
-// @each $palette, $color in $palette-color {
-//   .paleta-#{$palette} {
-//     color: $color;
-//   }
-// }

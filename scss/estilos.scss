@@ -26,7 +26,7 @@
   font-size: 3.5rem;
 }
 .navbar-dark .navbar-nav .nav-link{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 /*Contenido HOME*/
@@ -40,11 +40,10 @@
   margin-top: 120px;
   margin-bottom: 50px;
   .carousel-item {
-    background: #777;
+    background: rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
     position: relative;
-    z-index: 1;
     &:before {
       content: "";
       position: absolute;
@@ -62,11 +61,10 @@
       text-align: center;
     }
     .overlay-image{
-      position: absolute;
+      position: relative;
       background-position: center;
       background-size: cover;
-      opacity: 0.5;
-      z-index: 3;
+      opacity: 0.7;
     }
     h1 {
       color: #ffffff;
@@ -125,26 +123,63 @@
   }
 }
 .btn-excursion {
-  @extend .btn;
+  @extend .btn-1;
   background-color: rgb(80, 203, 224);
 }
-.tituloSeparador{
-  height: 200px;
+.btn-contacto {
+  @extend .btn-1;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0);
 }
-/*Finaliza pagina HOME*/
+.tituloSeparador{
+  color: rgb(0, 0, 0);
+}
+
+/*Finaliza pagina HOME*/ 
 
 /*Comienza pagina EXCURSIONES*/
 #videoExcursion {
+  position: relative;
   margin-top: 120px;
-  background: rgb(223, 174, 238);
-  background: radial-gradient(
-    circle,
-    rgba(223, 174, 238, 0.9248074229691877) 0%,
-    rgba(148, 233, 206, 1) 100%
-  );
   width: 100%;
-  height: 700px;
+  height: 750px;
   color: white;
+  background: black;
+  top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container {
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  .overlay-video{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.65;
+  }
 }
 .bloqueExcursion {
   .imgExcursion1 {
@@ -166,8 +201,38 @@
 
 /*Comienza pagina CONTACTO*/
 
-.bloqueDeContacto {
+#bloqueInfo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#bannerContacto{
   margin-top: 140px;
+  width: 100%;
+  .banner-item{
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 70px;
+  }
+  .container{
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  .overlay-banner{
+    position: relative;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.7;
+  }
+  img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
 }
 /*Finaliza pagina CONTACTO*/
 

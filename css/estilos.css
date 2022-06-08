@@ -5,9 +5,9 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100%;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -39,14 +39,14 @@ img {
   position: fixed;
   z-index: 10;
   top: 0;
-  border-top: 8px solid white;
+  border-top: 8px solid #cb0d3d;
   width: 100%;
   height: 120px;
 }
 
 /*MIXIN*/
 /*EXTENDED*/
-.btn, .btn-excursion {
+.btn-1, .btn, .btn-excursion, .btn-contacto {
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -57,24 +57,32 @@ img {
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
-  background-color: #3887f0c7;
+  background-color: #cb0d3d;
 }
 
 /*BACKGROUND COLORS*/
 .bg-color1 {
-  background-color: #e9d5da;
+  background-color: #0e0036;
 }
 
 .bg-color2 {
-  background-color: #827397;
+  background-color: #39A2DB;
 }
 
 .bg-color3 {
-  background-color: #4d4c7d;
+  background-color: #6b6a6a05;
 }
 
 .bg-color4 {
-  background-color: #363062;
+  background-color: #000000;
+}
+
+.bg-color5 {
+  background-color: rgba(192, 189, 189, 0.055);
+}
+
+.bg-cards {
+  background-color: #ffffff;
 }
 
 .font-light {
@@ -222,6 +230,10 @@ img {
   h2 {
     font-size: 3rem !important;
   }
+  .wrap-element {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
 }
 
 .navbar {
@@ -273,11 +285,10 @@ img {
 }
 
 .mySlide .carousel-item {
-  background: #777;
+  background: black;
   background-position: center;
   background-size: cover;
   position: relative;
-  z-index: 1;
 }
 
 .mySlide .carousel-item:before {
@@ -299,11 +310,10 @@ img {
 }
 
 .mySlide .carousel-item .overlay-image {
-  position: absolute;
+  position: relative;
   background-position: center;
   background-size: cover;
-  opacity: 0.5;
-  z-index: 3;
+  opacity: 0.7;
 }
 
 .mySlide .carousel-item h1 {
@@ -373,19 +383,61 @@ img {
   background-color: #50cbe0;
 }
 
+.btn-contacto {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: black;
+}
+
 .tituloSeparador {
-  height: 200px;
+  color: black;
 }
 
 /*Finaliza pagina HOME*/
 /*Comienza pagina EXCURSIONES*/
 #videoExcursion {
+  position: relative;
   margin-top: 120px;
-  background: #dfaeee;
-  background: radial-gradient(circle, rgba(223, 174, 238, 0.924807) 0%, #94e9ce 100%);
   width: 100%;
-  height: 700px;
+  height: 750px;
   color: white;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#videoExcursion video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#videoExcursion .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#videoExcursion .overlay-video {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.65;
 }
 
 .bloqueExcursion .imgExcursion1 {
@@ -408,8 +460,43 @@ img {
 
 /*Finaliza pagina EXCURSIONES*/
 /*Comienza pagina CONTACTO*/
-.bloqueDeContacto {
+#bloqueInfo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#bannerContacto {
   margin-top: 140px;
+  width: 100%;
+}
+
+#bannerContacto .banner-item {
+  background: black;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 70px;
+}
+
+#bannerContacto .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#bannerContacto .overlay-banner {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+#bannerContacto img {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
 }
 
 /*Finaliza pagina CONTACTO*/
